@@ -67,7 +67,7 @@ class ShowRoomController extends AbstractController
             $em->persist($idData);
             $em->flush();
 
-            return $this->redirectToRoute('showDBauthor');
+            return $this->redirectToRoute('showroom');
         }
 
         return $this->renderForm('showroom/edit.html.twig', [
